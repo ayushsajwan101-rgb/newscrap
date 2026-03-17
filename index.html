@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scrapbook Diary</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="desk-backdrop"></div>
+
+  <main class="scrapbook-shell">
+    <section class="scrapbook-page">
+      <div class="page-header">
+        <p class="eyebrow">College Project</p>
+        <h1>My Memory Scrapbook</h1>
+        <p class="subtitle">
+          A warm scrapbook-style diary with memories, pasted photos, and a journal that opens like a real book.
+        </p>
+      </div>
+
+      <div class="scrapbook-grid">
+        <button
+          class="memory-card tape-top anime-card"
+          data-type="anime"
+          style="--rotation:-5deg; --push:20px;"
+        >
+          <span class="tape-piece"></span>
+          <span class="pin"></span>
+
+          <span class="photo-frame anime-main-frame">
+            <img src="https://tse1.mm.bing.net/th/id/OIP.6naXJjlznZY5ALlml_oxyAHaEK?rs=1&pid=ImgDetMain&o=7&rm=3" alt="My Favorite Anime" />
+          </span>
+
+          <span class="caption">My Favorite Anime</span>
+
+          <div class="anime-preview-strip">
+            <img src="https://2.bp.blogspot.com/-G8dngXGk0t8/XSRKIAvXzSI/AAAAAAAAAjs/apHFLyAO9PE77DS_sVQkChTyaSpVL1GZACKgBGAs/w0/levi-eren-krista-attack-on-titan-characters-uhdpaper.com-4K-143.jpg" alt="https://2.bp.blogspot.com/-G8dngXGk0t8/XSRKIAvXzSI/AAAAAAAAAjs/apHFLyAO9PE77DS_sVQkChTyaSpVL1GZACKgBGAs/w0/levi-eren-krista-attack-on-titan-characters-uhdpaper.com-4K-143.jpg" class="anime-preview-thumb" />
+            <img src="https://tse3.mm.bing.net/th/id/OIP.hvTbIagOIyaXFtBqPdHEBgHaE4?rs=1&pid=ImgDetMain&o=7&rm=3" alt ="https://tse3.mm.bing.net/th/id/OIP.hvTbIagOIyaXFtBqPdHEBgHaE4?rs=1&pid=ImgDetMain&o=7&rm=3" class="anime-preview-thumb" />
+            <img src="https://images.immediate.co.uk/production/volatile/sites/3/2022/10/Demon-Slayer-the-Movie-Mugen-Train-cropped-poster-f790e77.jpg?quality=90&resize=980,654" alt="https://images.immediate.co.uk/production/volatile/sites/3/2022/10/Demon-Slayer-the-Movie-Mugen-Train-cropped-poster-f790e77.jpg?quality=90&resize=980,654" class="anime-preview-thumb" />
+            <img src="https://th.bing.com/th/id/OIP.7q_MClDGLVOg2zx-2nHeXwHaE7?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="https://th.bing.com/th/id/OIP.7q_MClDGLVOg2zx-2nHeXwHaE7?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" class="anime-preview-thumb" />
+          </div>
+        </button>
+
+        <button
+          class="memory-card journal-card tape-side"
+          data-type="journal"
+          style="--rotation:4deg; --push:50px;"
+        >
+          <span class="tape-piece"></span>
+          <span class="pin"></span>
+          <span class="photo-frame journal-cover-card">
+            <span class="journal-cover-inner">
+              <span class="journal-title-card">Journal</span>
+              <span class="journal-subtitle-card">private thoughts</span>
+            </span>
+          </span>
+          <span class="caption">Journal</span>
+        </button>
+
+        <button
+          class="memory-card tape-top"
+          data-type="memory"
+          data-title="Music and Mood"
+          data-description="A memory page for songs, playlists, and moods that match different days of college life."
+          data-image="https://i.ytimg.com/vi/AbkEmIgJMcU/maxresdefault.jpg"
+          style="--rotation:6deg; --push:36px;"
+        >
+          <span class="tape-piece"></span>
+          <span class="pin"></span>
+          <span class="photo-frame">
+            <img src="https://i.ytimg.com/vi/AbkEmIgJMcU/maxresdefault.jpg" alt="Music and Mood" />
+          </span>
+          <span class="caption">Music and Mood</span>
+        </button>
+
+        <button
+          class="memory-card tape-side"
+          data-type="memory"
+          data-media="video"
+          data-title="Campus Adventures"
+          data-description="A scrapbook memory for college walks, projects, classes, and small moments on campus."
+          data-video="campus.mp4"
+          style="--rotation:-7deg; --push:28px;"
+        >
+          <span class="tape-piece"></span>
+          <span class="pin"></span>
+          <span class="photo-frame">
+            <img src="https://www.addressguru.in/images/597474640.jpeg" alt="Campus Adventures" />
+          </span>
+          <span class="caption">Campus Adventures</span>
+        </button>
+
+        <button
+          class="memory-card"
+          data-type="memory"
+          data-title="Cafe Day"
+          data-description="A cozy memory card for slow afternoons, conversations, and coffee-filled study sessions."
+          data-image="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1200&q=80"
+          style="--rotation:-2deg; --push:12px;"
+        >
+          <span class="tape-piece"></span>
+          <span class="pin"></span>
+          <span class="photo-frame">
+            <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1200&q=80" alt="Cafe Day" />
+          </span>
+          <span class="caption">Cafe Day</span>
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <section class="overlay anime-overlay" aria-hidden="true">
+    <div class="overlay-paper anime-panel">
+      <button class="close-button" data-close="anime">Close</button>
+
+      <div class="anime-viewer">
+        <p class="overlay-note">Anime Collection</p>
+        <h2>My Favorite Anime</h2>
+
+        <div class="anime-photo-stack">
+          <div class="anime-photo-slide is-active" style="--photo-rotate:-6deg; --stack-offset:0px;">
+            <div class="anime-photo-paper">
+              <img src="anime1.jpg" alt="Anime 1" />
+            </div>
+          </div>
+
+          <div class="anime-photo-slide" style="--photo-rotate:4deg; --stack-offset:10px;">
+            <div class="anime-photo-paper">
+              <img src="anime2.jpg" alt="Anime 2" />
+            </div>
+          </div>
+
+          <div class="anime-photo-slide" style="--photo-rotate:-3deg; --stack-offset:18px;">
+            <div class="anime-photo-paper">
+              <img src="anime3.jpg" alt="Anime 3" />
+            </div>
+          </div>
+
+          <div class="anime-photo-slide" style="--photo-rotate:6deg; --stack-offset:26px;">
+            <div class="anime-photo-paper">
+              <img src="anime4.jpg" alt="Anime 4" />
+            </div>
+          </div>
+        </div>
+
+        <div class="anime-controls">
+          <p class="anime-status" id="animeStatus">Photo 1 / 4</p>
+          <button class="journal-nav" id="animeNextBtn" type="button">Next</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="overlay memory-overlay" aria-hidden="true">
+    <div class="overlay-paper memory-panel">
+      <button class="close-button" data-close="memory">Close</button>
+
+      <div class="memory-hero">
+        <img id="memoryPreview" src="" alt="" />
+        <video id="memoryVideo" controls style="display:none; width:100%; height:100%; object-fit:cover; border-radius:12px;">
+          <source id="memoryVideoSource" src="" type="video/mp4" />
+        </video>
+      </div>
+
+      <div class="memory-copy">
+        <p class="overlay-note">Keepsake</p>
+        <h2 id="memoryTitle"></h2>
+        <p id="memoryDescription"></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="overlay journal-overlay" aria-hidden="true">
+    <div class="journal-book">
+      <button class="close-button" data-close="journal">Close</button>
+
+      <div class="book-cover">
+        <span class="cover-stamp">Personal Journal</span>
+      </div>
+
+      <div class="book-pages">
+        <div class="journal-spread is-active">
+          <article class="journal-page left-page">
+            <p class="page-date">week One</p>
+            <h2>First Entry</h2>
+            <p class="page-intro"></p>
+            <div class="journal-writing-display">During the first week, I started observing my daily routine and the activities around me. I focused on how people interact with each other and how small actions affect our day. I noticed that many times we do things automatically without thinking much about them. For example, people using their phones while waiting for buses or talking with friends during breaks.</div>
+          </article>
+
+          <article class="journal-page right-page">
+            <p class="page-date">week One</p>
+            <h2>Continue Writing</h2>
+            <p class="page-intro"></p>
+            <div class="journal-writing-display">This week helped me understand the importance of observation. I also realized that when we pay attention to small details, we learn a lot about human behavior. It made me more aware of my surroundings and the people around me</div>
+          </article>
+        </div>
+
+        <div class="journal-spread">
+          <article class="journal-page left-page">
+            <p class="page-date">week Two</p>
+            <h2>Second Entry</h2>
+            <p class="page-intro"></p>
+            <div class="journal-writing-display">In the second week, I tried to reflect more on my own actions and decisions. I noticed that sometimes we react emotionally instead of thinking logically. I also tried to manage my time better and focus on productive activities like studying, watching educational content, and improving my skills.</div>
+          </article>
+
+          <article class="journal-page right-page">
+            <p class="page-date">week Two</p>
+            <h2>More Notes</h2>
+            <p class="page-intro"></p>
+            <div class="journal-writing-display">I also observed how communication affects relationships. The way we talk to others can change the entire situation. A calm and respectful conversation can solve many problems that might otherwise turn into conflicts. This week helped me understand the value of patience and thoughtful communication.</div>
+          </article>
+        </div>
+
+        <div class="journal-spread">
+          <article class="journal-page left-page">
+            <p class="page-date">week Three</p>
+            <h2>Third Entry</h2>
+            <p class="page-intro">.</p>
+            <div class="journal-writing-display">During the third week, I focused more on personal growth and self-reflection. I thought about my goals and what kind of person I want to become in the future. I realized that success requires consistency, discipline, and continuous learning.</div>
+          </article>
+
+          <article class="journal-page right-page">
+            <p class="page-date">week Three</p>
+            <h2>Memory Space</h2>
+            <p class="page-intro"></p>
+            <div class="journal-writing-display">I also spent time thinking about my strengths and weaknesses. Understanding these helps in improving ourselves. By the end of the week, I felt more motivated to work on my goals and build better habits. This week made me realize that self-improvement is a continuous journey.</div>
+          </article>
+        </div>
+      </div>
+
+      <div class="journal-controls">
+        <button class="journal-nav" id="prevPage">Previous Page</button>
+        <p class="journal-status" id="journalStatus">Day One</p>
+        <button class="journal-nav" id="nextPage">Next Page</button>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
